@@ -1,0 +1,9 @@
+<h1>Your Score</h1>
+
+<p><%= @view_response %></p>
+<p>Your score is <%= @score_total %></p>
+
+<form action="/new">
+  <input type="submit" value="Play Again!" class="btn btn-primary">
+  <%= hidden_field_tag :score, @score_total %>
+</form>
